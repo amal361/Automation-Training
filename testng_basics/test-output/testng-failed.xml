@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [TestngSuite]" parallel="methods">
+  <test thread-count="1" name="Testngbasics(failed)" parallel="methods">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="http://demo.guru99.com/test/newtours/"/>
+    <classes>
+      <class name="testng_basics.Testng_basics">
+        <methods>
+          <include name="browserClose"/>
+          <include name="environmentClose"/>
+          <include name="dbConnection"/>
+          <include name="dBClose"/>
+          <include name="testInizalise"/>
+          <include name="browserLaunch"/>
+          <include name="verifyLogin" invocation-numbers="1"/>
+          <include name="environmentVerify"/>
+        </methods>
+      </class> <!-- testng_basics.Testng_basics -->
+    </classes>
+  </test> <!-- Testngbasics(failed) -->
+</suite> <!-- Failed suite [TestngSuite] -->
