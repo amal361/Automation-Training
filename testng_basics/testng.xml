@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestngSuite" parallel="methods" thread-count="1">
+  <test  name="Testngbasics">
+  <parameter name="url" value="http://demo.guru99.com/test/newtours/"/>
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testng_basics.Testng_basics"/>
+      <class name="testng_basics.Test_ng_basics2"/>
+    </classes>
+  </test> <!-- Testngbasics --> 
+</suite> <!-- TestngSuite -->
+

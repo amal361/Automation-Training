@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-TestngSuite">
+              <span class="suite-name border-failed">TestngSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-TestngSuite">
+                    <span>C:\Users\amal\Selenium\testng_basics\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-TestngSuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-TestngSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-TestngSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-TestngSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-TestngSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-TestngSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestngSuite" class="hide-methods failed suite-TestngSuite"> (hide)</a> <!-- hide-methods failed suite-TestngSuite -->
+                      <a href="#" panel-name="suite-TestngSuite" class="show-methods failed suite-TestngSuite"> (show)</a> <!-- show-methods failed suite-TestngSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-TestngSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestngSuite" title="testng_basics.Testng_basics" hash-for-method="testInizalise">testInizalise</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestngSuite" title="testng_basics.Testng_basics" hash-for-method="verifyLogin(asd, cds)">verifyLogin(asd, cds)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestngSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestngSuite" class="hide-methods passed suite-TestngSuite"> (hide)</a> <!-- hide-methods passed suite-TestngSuite -->
+                      <a href="#" panel-name="suite-TestngSuite" class="show-methods passed suite-TestngSuite"> (show)</a> <!-- show-methods passed suite-TestngSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-TestngSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestngSuite" title="testng_basics.Test_ng_basics2" hash-for-method="sampleTest1">sampleTest1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestngSuite" title="testng_basics.Test_ng_basics2" hash-for-method="sampleTest2">sampleTest2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestngSuite" title="testng_basics.Test_ng_basics2" hash-for-method="sampleTest3">sampleTest3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestngSuite" title="testng_basics.Testng_basics" hash-for-method="verifyLogin(Ajin, 123456)">verifyLogin(Ajin, 123456)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestngSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestngSuite" class="panel TestngSuite">
+          <div class="suite-TestngSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testng_basics.Testng_basics</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInizalise">
+                  </a> <!-- testInizalise -->
+                  <span class="method-name">testInizalise</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Cannot inject @Test annotated Method [testInizalise] with [class java.lang.String].
+For more information on native dependency injection please refer to http://testng.org/doc/documentation-main.html#native-dependency-injection
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogin(asd, cds)">
+                  </a> <!-- verifyLogin(asd, cds) -->
+                  <span class="method-name">verifyLogin</span>
+                  <span class="parameters">(asd, cds)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=87.0.4280.88)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-LEQJLJ7&apos;, ip: &apos;192.168.43.59&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\amal\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49704}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a5cafa610fe6553565d4323c62575dbb
+*** Element info: {Using=name, value=userName}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at testng_basics.Testng_basics.verifyLogin(Testng_basics.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestngSuite-class-failed -->
+          <div class="suite-TestngSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testng_basics.Test_ng_basics2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sampleTest1">
+                  </a> <!-- sampleTest1 -->
+                  <span class="method-name">sampleTest1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sampleTest2">
+                  </a> <!-- sampleTest2 -->
+                  <span class="method-name">sampleTest2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sampleTest3">
+                  </a> <!-- sampleTest3 -->
+                  <span class="method-name">sampleTest3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestngSuite-class-passed -->
+          <div class="suite-TestngSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testng_basics.Testng_basics</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogin(Ajin, 123456)">
+                  </a> <!-- verifyLogin(Ajin, 123456) -->
+                  <span class="method-name">verifyLogin</span>
+                  <span class="parameters">(Ajin, 123456)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestngSuite-class-passed -->
+        </div> <!-- panel TestngSuite -->
+        <div panel-name="test-xml-TestngSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\amal\Selenium\testng_basics\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;TestngSuite&quot; parallel=&quot;methods&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Testngbasics&quot; parallel=&quot;methods&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;http://demo.guru99.com/test/newtours/&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testng_basics.Testng_basics&quot;/&gt;
+      &lt;class name=&quot;testng_basics.Test_ng_basics2&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Testngbasics --&gt;
+&lt;/suite&gt; &lt;!-- TestngSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestngSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestngSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Testngbasics (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestngSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestngSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestngSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestngSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestngSuite');
+function tableData_TestngSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyLogin')
+data.setCell(0, 2, 'testng_basics.Testng_basics')
+data.setCell(0, 3, 13605);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyLogin')
+data.setCell(1, 2, 'testng_basics.Testng_basics')
+data.setCell(1, 3, 837);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'sampleTest1')
+data.setCell(2, 2, 'testng_basics.Test_ng_basics2')
+data.setCell(2, 3, 9);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'sampleTest2')
+data.setCell(3, 2, 'testng_basics.Test_ng_basics2')
+data.setCell(3, 3, 8);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'sampleTest3')
+data.setCell(4, 2, 'testng_basics.Test_ng_basics2')
+data.setCell(4, 3, 2);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testInizalise')
+data.setCell(5, 2, 'testng_basics.Testng_basics')
+data.setCell(5, 3, 0);
+window.suiteTableData['TestngSuite']= { tableData: data, tableDiv: 'times-div-TestngSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <div id="times-div-TestngSuite">
+              </div> <!-- times-div-TestngSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestngSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestngSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestngSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">3 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testng_basics.Testng_basics</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyTitle</span>
+                <br/>
+                <span class="ignored-method-name">verifyRegister</span>
+                <br/>
+                <span class="ignored-method-name">verifyContact</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestngSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testng_basics.Testng_basics</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">environmentVerify</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
+                <span class="method-name">dbConnection</span>
+                <span class="method-start">36 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testng_basics.Test_ng_basics2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">sampleTest1</span>
+                <span class="method-start">114 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sampleTest2</span>
+                <span class="method-start">129 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sampleTest3</span>
+                <span class="method-start">142 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testng_basics.Testng_basics</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserLaunch(chrome, http://demo.guru99.com/test/newtours/)</span>
+                <span class="method-start">152 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLogin(Ajin, 123456)</span>
+                <span class="method-start">41114 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserClose([TestResult name=verifyLogin status=SUCCESS method=Testng_basics.verifyLogin(java.lang.String, java....)</span>
+                <span class="method-start">54721 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserLaunch(chrome, http://demo.guru99.com/test/newtours/)</span>
+                <span class="method-start">55079 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLogin(asd, cds)</span>
+                <span class="method-start">76577 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">browserClose([TestResult name=verifyLogin status=FAILURE method=Testng_basics.verifyLogin(java.lang.String, java....)</span>
+                <span class="method-start">77419 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
