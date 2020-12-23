@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [TestngSuite]" parallel="methods">
   <test thread-count="1" name="Testngbasics(failed)" parallel="methods">
     <parameter name="browser" value="chrome"/>
@@ -13,7 +13,6 @@
           <include name="dBClose"/>
           <include name="testInizalise"/>
           <include name="browserLaunch"/>
-          <include name="verifyLogin" invocation-numbers="1"/>
           <include name="environmentVerify"/>
         </methods>
       </class> <!-- testng_basics.Testng_basics -->

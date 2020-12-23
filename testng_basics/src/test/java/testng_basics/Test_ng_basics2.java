@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class Test_ng_basics2 {
 	@Test
 public void sampleTest1() {
-		System.out.println("sample test 1");
+		System.out.println("sampling test 1");
 	}
 	@Test
 	public void sampleTest2() {
